@@ -2,20 +2,20 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">512</int>
-		<string key="IBDocument.SystemVersion">10A380</string>
-		<string key="IBDocument.InterfaceBuilderVersion">731</string>
-		<string key="IBDocument.AppKitVersion">1025.2</string>
-		<string key="IBDocument.HIToolboxVersion">427.00</string>
+		<string key="IBDocument.SystemVersion">10C540</string>
+		<string key="IBDocument.InterfaceBuilderVersion">740</string>
+		<string key="IBDocument.AppKitVersion">1038.25</string>
+		<string key="IBDocument.HIToolboxVersion">458.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">58</string>
+			<string key="NS.object.0">62</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="53"/>
-			<integer value="11"/>
-			<integer value="116"/>
 			<integer value="84"/>
+			<integer value="53"/>
+			<integer value="14"/>
+			<integer value="116"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -98,11 +98,6 @@
 								<int key="IBUIBarStyle">2</int>
 								<object class="NSMutableArray" key="IBUIItems">
 									<bool key="EncodedWithXMLCoder">YES</bool>
-									<object class="IBUIBarButtonItem" id="975582346">
-										<int key="IBUIStyle">1</int>
-										<reference key="IBUIToolbar" ref="737139380"/>
-										<int key="IBUISystemItemIdentifier">8</int>
-									</object>
 									<object class="IBUIBarButtonItem" id="953668478">
 										<int key="IBUIStyle">1</int>
 										<reference key="IBUIToolbar" ref="737139380"/>
@@ -315,7 +310,7 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 					<object class="IBUIButton" id="281174836">
 						<reference key="NSNextResponder" ref="691565035"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{-19, 86}, {320, 137}}</string>
+						<string key="NSFrame">{{-20, 86}, {320, 137}}</string>
 						<reference key="NSSuperview" ref="691565035"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -611,14 +606,6 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">reply:</string>
-						<reference key="source" ref="975582346"/>
-						<reference key="destination" ref="664661524"/>
-					</object>
-					<int key="connectionID">58</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">directMessage:</string>
 						<reference key="source" ref="953668478"/>
 						<reference key="destination" ref="664661524"/>
@@ -841,9 +828,9 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 						<reference key="object" ref="691565035"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="281174836"/>
 							<reference ref="742480497"/>
 							<reference ref="500761018"/>
+							<reference ref="281174836"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">ReplyOverlay</string>
@@ -996,7 +983,6 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="953668478"/>
-							<reference ref="975582346"/>
 							<reference ref="639921445"/>
 							<reference ref="817506779"/>
 							<reference ref="193838288"/>
@@ -1007,11 +993,6 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 					<object class="IBObjectRecord">
 						<int key="objectID">52</int>
 						<reference key="object" ref="953668478"/>
-						<reference key="parent" ref="737139380"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">51</int>
-						<reference key="object" ref="975582346"/>
 						<reference key="parent" ref="737139380"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -1139,7 +1120,6 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 					<string>34.IBPluginDependency</string>
 					<string>47.IBPluginDependency</string>
 					<string>49.IBPluginDependency</string>
-					<string>51.IBPluginDependency</string>
 					<string>52.IBPluginDependency</string>
 					<string>53.IBEditorWindowLastContentRect</string>
 					<string>53.IBPluginDependency</string>
@@ -1196,20 +1176,19 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>JustUpdateAppDelegate</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{873, 152}, {320, 460}}</string>
+					<string>{{894, 188}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{221, 235}, {320, 460}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{220, 235}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{83, 325}, {320, 216}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{569, 227}, {320, 216}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1668,6 +1647,6 @@ ZnJvbSBUd2l0dGVyLmNvbS4</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<string key="IBDocument.LastKnownRelativeProjectPath">JustUpdate.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">3.0</string>
+		<string key="IBCocoaTouchPluginVersion">3.1</string>
 	</data>
 </archive>

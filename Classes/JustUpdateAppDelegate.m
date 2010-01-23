@@ -413,18 +413,13 @@
 #pragma mark UI Actions
 
 -(IBAction)signOut:(id)sender 
-{	
-	if(!disableAnalytics) [[Beacon shared] startSubBeaconWithName:@"signout" timeSession:NO];
-	
-	NSFileManager *fm = [NSFileManager defaultManager];
-	NSString *cachePath = [self getFriendsCacheFileName];
-	if([fm fileExistsAtPath:cachePath]) {
-		[fm removeItemAtPath:cachePath error:nil];
-	}
-	self.replyPeople = [NSArray array];	
-	[self oauthSignout];
-	[newTweet resignFirstResponder];
-	[self showSignin];
+{	UIAlertView *uav = [[UIAlertView alloc] initWithTitle:@"Confirm Sign Out"
+												  message:@"Are you sure you wish to sign out?"
+												 delegate:self
+										cancelButtonTitle:@"Sign Out"
+										otherButtonTitles:@"Cancel", nil];
+	[uav show];
+	[uav autorelease];
 	
 }
 
@@ -555,6 +550,15 @@
 	}
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if ([alertView.title isEqualToString:@"Confirm Sign Out"]) {
+		if (buttonIndex == 0) {
+			[self doSignOut];
+		}
+	}
+}
+		 
 -(void)verifySigninDone:(AuthdThreadArgs*)args
 {
 	
@@ -749,6 +753,21 @@
 
 #pragma mark -
 #pragma mark Auxillary Methods
+
+-(void)doSignOut
+{
+	if(!disableAnalytics) [[Beacon shared] startSubBeaconWithName:@"signout" timeSession:NO];
+	
+	NSFileManager *fm = [NSFileManager defaultManager];
+	NSString *cachePath = [self getFriendsCacheFileName];
+	if([fm fileExistsAtPath:cachePath]) {
+		[fm removeItemAtPath:cachePath error:nil];
+	}
+	self.replyPeople = [NSArray array];	
+	[self oauthSignout];
+	[newTweet resignFirstResponder];
+	[self showSignin];
+}
 
 -(void)peopleFromJSONString:(NSString*)jsonString
 {
